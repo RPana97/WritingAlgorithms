@@ -39,6 +39,14 @@ public class Main {
 
         // Print the indices where pattern is found
         System.out.println("Pattern found at indices: " + result);
+
+        // Merge Sort Example
+        int mergeArr[] = {12, 11, 13, 5, 6, 7};
+        int mergeN = mergeArr.length;
+
+        MergeSort.mergeSort(mergeArr, 0, mergeN - 1);
+        System.out.println("Merge Sorted array: ");
+        printArray(mergeArr, mergeN);
     }
 
     // Function to print the array
